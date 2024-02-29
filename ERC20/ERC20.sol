@@ -3,19 +3,19 @@ pragma solidity >=0.4.17;
 import "./IERC20.sol";
 /**
  * @title ERC20 implementation
- * @dev Implementation of the ERC20 interface
+ * @notice Implementation of the ERC20 interface
  */
 contract ERC20 is IERC20 {
     /**
-     * @dev The name of the token
+     * @notice The name of the token
      */
     string public name;
     /**
-     * @dev The symbol of the token
+     * @notice The symbol of the token
      */
     string public symbol;
     /**
-     * @dev The number of decimals of the token
+     * @notice The number of decimals of the token
      */
     uint8 public decimals;
     uint256 private _totalSupply;
@@ -23,7 +23,7 @@ contract ERC20 is IERC20 {
     mapping (address => mapping (address => uint256)) private _allowance; // allowance for each account for each spender
 
     /**
-     * @dev Constructor
+     * @notice Constructor
      * @param name The name of the token
      * @param symbol The symbol of the token
      * @param decimals The number of decimals of the token
@@ -38,7 +38,7 @@ contract ERC20 is IERC20 {
     }
 
     /**
-     * @dev Returns the total supply of the token
+     * @notice Returns the total supply of the token
      * @return totalSupply The total supply of the token
      */
     function totalSupply() public view returns (uint256 totalSupply) {
@@ -46,7 +46,7 @@ contract ERC20 is IERC20 {
     }
 
     /**
-     * @dev Returns the balance of the specified address
+     * @notice Returns the balance of the specified address
      * @param _owner The address to query the balance of
      * @return balance The balance of the specified address
      */
@@ -55,7 +55,7 @@ contract ERC20 is IERC20 {
     }
 
     /**
-     * @dev Transfers tokens from the message sender to the specified address
+     * @notice Transfers tokens from the message sender to the specified address
      * @param _to The address to transfer to
      * @param _value The amount to be transferred
      * @return success true if the transfer was successful, false otherwise
@@ -69,7 +69,7 @@ contract ERC20 is IERC20 {
     }
 
     /**
-     * @dev Transfers tokens from a specified address to another specified address
+     * @notice Transfers tokens from a specified address to another specified address
      * @param _from The address to transfer from
      * @param _to The address to transfer to
      * @param _value The amount to be transferred
@@ -85,7 +85,7 @@ contract ERC20 is IERC20 {
     }
 
     /**
-     * @dev Approves the specified address to spend the specified amount of tokens on behalf of the message sender
+     * @notice Approves the specified address to spend the specified amount of tokens on behalf of the message sender
      * @param _spender The address to be approved to spend the tokens
      * @param _value The amount of tokens to be approved to be spent
      * @return success true if the approval was successful, false otherwise
@@ -97,7 +97,7 @@ contract ERC20 is IERC20 {
     }
 
     /**
-     * @dev Returns the amount of tokens that the specified address is allowed to spend on behalf of the message sender
+     * @notice Returns the amount of tokens that the specified address is allowed to spend on behalf of the message sender
      * @param _owner The address that is allowed to spend the tokens
      * @param _spender The address that is allowed to spend the tokens
      * @return remaining The amount of tokens that the specified address is allowed to spend on behalf of the message sender
