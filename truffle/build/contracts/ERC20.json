@@ -88,7 +88,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -101,7 +102,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -114,7 +116,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -127,7 +130,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -146,7 +150,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -247,7 +252,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_symbol\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"_decimals\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"__totalSupply\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_spender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_spender\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"remaining\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"__totalSupply\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"allowance(address,address)\":{\"params\":{\"_owner\":\"The address that is allowed to spend the tokens\",\"_spender\":\"The address that is allowed to spend the tokens\"},\"returns\":{\"remaining\":\"The amount of tokens that the specified address is allowed to spend on behalf of the message sender\"}},\"approve(address,uint256)\":{\"params\":{\"_spender\":\"The address to be approved to spend the tokens\",\"_value\":\"The amount of tokens to be approved to be spent\"},\"returns\":{\"success\":\"true if the approval was successful, false otherwise\"}},\"balanceOf(address)\":{\"params\":{\"_owner\":\"The address to query the balance of\"},\"returns\":{\"balance\":\"The balance of the specified address\"}},\"constructor\":{\"params\":{\"__totalSupply\":\"The total supply of the token\",\"_decimals\":\"The number of decimals of the token\",\"_name\":\"The name of the token\",\"_symbol\":\"The symbol of the token\"}},\"totalSupply()\":{\"returns\":{\"__totalSupply\":\"The total supply of the token\"}},\"transfer(address,uint256)\":{\"params\":{\"_to\":\"The address to transfer to\",\"_value\":\"The amount to be transferred\"},\"returns\":{\"success\":\"true if the transfer was successful, false otherwise\"}},\"transferFrom(address,address,uint256)\":{\"params\":{\"_from\":\"The address to transfer from\",\"_to\":\"The address to transfer to\",\"_value\":\"The amount to be transferred\"},\"returns\":{\"success\":\"true if the transfer was successful, false otherwise\"}}},\"title\":\"ERC20 implementation\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"allowance(address,address)\":{\"notice\":\"Returns the amount of tokens that the specified address is allowed to spend on behalf of the message sender\"},\"approve(address,uint256)\":{\"notice\":\"Approves the specified address to spend the specified amount of tokens on behalf of the message sender\"},\"balanceOf(address)\":{\"notice\":\"Returns the balance of the specified address\"},\"constructor\":{\"notice\":\"Constructor\"},\"decimals()\":{\"notice\":\"The number of decimals of the token\"},\"name()\":{\"notice\":\"The name of the token\"},\"symbol()\":{\"notice\":\"The symbol of the token\"},\"totalSupply()\":{\"notice\":\"Returns the total supply of the token\"},\"transfer(address,uint256)\":{\"notice\":\"Transfers tokens from the message sender to the specified address\"},\"transferFrom(address,address,uint256)\":{\"notice\":\"Transfers tokens from a specified address to another specified address\"}},\"notice\":\"Implementation of the ERC20 interface\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ERC20.sol\":\"ERC20\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ERC20.sol\":{\"keccak256\":\"0x548fa16fe0e45f27704d57de48ff0ede9126eca76bb95cccfd5bf74c8eff8299\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b426cb0217ce86744c2c0df3e9338457a7f7d603423ef584c8da37b06988f8a8\",\"dweb:/ipfs/QmPqmsWWeaw4pR1f94v4BBMrwCRUA9Zt4AFwfTLXn8cuLh\"]},\"project:/contracts/IERC20.sol\":{\"keccak256\":\"0x2935c02494aedf849aa85b3af2f418e4df1fd115cd03f67a3f08a054d0c34bf0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b0ddc0f3009593946d54c52b0227bc72630761708f62b92b4f80222f4c63161e\",\"dweb:/ipfs/QmcwzZYGvtYB8Zd4qcfaomsteeszyJ3Ny1uvTfbC2GfxzQ\"]}},\"version\":1}",
@@ -9743,9 +9749,17 @@
     "name": "solc",
     "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x4a00CE2D99da989d43724Ec6B6656995526261e3",
+      "transactionHash": "0x5fc6564fcecb60e854a4d5bb832a59c51ae1bc01dca4f96036962009b7c33b31"
+    }
+  },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-03-08T09:15:32.602Z",
+  "updatedAt": "2024-03-11T15:03:37.674Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {
