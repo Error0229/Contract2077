@@ -1,0 +1,195 @@
+{
+  "contractName": "ERC165",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"supportsInterface(bytes4)\":{\"params\":{\"interfaceId\":\"The interface identifier, as specified in ERC-165\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"supportsInterface(bytes4)\":{\"notice\":\"Query if a contract implements an interface\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ERC165.sol\":\"ERC165\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ERC165.sol\":{\"keccak256\":\"0x45e2b9c59ed6a1ad3f797a0e4cbb3a4dc4d3b0195e2a8763ed199dd39677ea77\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://967321b7d4549968bd3c534638500ef12a4467919e916d9b11a5fbb5c1d96063\",\"dweb:/ipfs/QmaGTCXdz2Akf2cDFj3mjLEHYdLBQRNbd59aetjMgWjGwH\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0;\r\n\r\n// SPDX-License-Identifier: MIT\r\n\r\n// ERC 165 \r\ninterface ERC165 {\r\n    /// @notice Query if a contract implements an interface\r\n    /// @param interfaceId The interface identifier, as specified in ERC-165\r\n    function supportsInterface(bytes4 interfaceId) external view returns (bool);\r\n}\r\n",
+  "sourcePath": "C:\\Users\\login\\Contract2077\\truffle\\contracts\\ERC165.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/ERC165.sol",
+    "exportedSymbols": {
+      "ERC165": [
+        10
+      ]
+    },
+    "id": 11,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ERC165",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 10,
+        "linearizedBaseContracts": [
+          10
+        ],
+        "name": "ERC165",
+        "nameLocation": "85:6:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 2,
+              "nodeType": "StructuredDocumentation",
+              "src": "99:133:0",
+              "text": "@notice Query if a contract implements an interface\n @param interfaceId The interface identifier, as specified in ERC-165"
+            },
+            "functionSelector": "01ffc9a7",
+            "id": 9,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "supportsInterface",
+            "nameLocation": "247:17:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4,
+                  "mutability": "mutable",
+                  "name": "interfaceId",
+                  "nameLocation": "272:11:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9,
+                  "src": "265:18:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 3,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "265:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "264:20:0"
+            },
+            "returnParameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9,
+                  "src": "308:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 6,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "308:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "307:6:0"
+            },
+            "scope": 10,
+            "src": "238:76:0",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11,
+        "src": "75:242:0",
+        "usedErrors": []
+      }
+    ],
+    "src": "0:319:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-03-12T14:32:43.728Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "supportsInterface(bytes4)": {
+        "params": {
+          "interfaceId": "The interface identifier, as specified in ERC-165"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "supportsInterface(bytes4)": {
+        "notice": "Query if a contract implements an interface"
+      }
+    },
+    "version": 1
+  }
+}
