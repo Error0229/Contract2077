@@ -1,4 +1,4 @@
-pragma solidity ^0.8.24;
+pragma solidity ^0.8.19;
 // SPDX-License-Identifier: MIT
 // The intereface defination from https://eips.ethereum.org/EIPS/eip-721
 interface IERC721 {

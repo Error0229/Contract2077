@@ -1,4 +1,4 @@
-pragma solidity ^0.8.24;
+pragma solidity ^0.8.19;
 // SPDX-License-Identifier: MIT
 // Define the intereface from https://eips.ethereum.org/EIPS/eip-20
 interface IERC20 {
