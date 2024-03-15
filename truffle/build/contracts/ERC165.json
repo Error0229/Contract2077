@@ -21,7 +21,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"supportsInterface(bytes4)\":{\"params\":{\"interfaceId\":\"The interface identifier, as specified in ERC-165\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"supportsInterface(bytes4)\":{\"notice\":\"Query if a contract implements an interface\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ERC165.sol\":\"ERC165\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ERC165.sol\":{\"keccak256\":\"0x45e2b9c59ed6a1ad3f797a0e4cbb3a4dc4d3b0195e2a8763ed199dd39677ea77\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://967321b7d4549968bd3c534638500ef12a4467919e916d9b11a5fbb5c1d96063\",\"dweb:/ipfs/QmaGTCXdz2Akf2cDFj3mjLEHYdLBQRNbd59aetjMgWjGwH\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.24+commit.e11b9ed9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"supportsInterface(bytes4)\":{\"params\":{\"interfaceId\":\"The interface identifier, as specified in ERC-165\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"supportsInterface(bytes4)\":{\"notice\":\"Query if a contract implements an interface\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ERC165.sol\":\"ERC165\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ERC165.sol\":{\"keccak256\":\"0xa489fd04327e05b9f6229f1420e5da279ab7bdcb2622ae983ab1f12df472440e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://730337b734bcbe98470d7c4258449ddc0ffed2f04d9bd929f3520cfa4e51991a\",\"dweb:/ipfs/QmTMdmf3obQCK5wQCBfWwo4TbRKBX3dvKp6qiYe23xy7x4\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -29,7 +29,7 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.8.0;\r\n\r\n// SPDX-License-Identifier: MIT\r\n\r\n// ERC 165 \r\ninterface ERC165 {\r\n    /// @notice Query if a contract implements an interface\r\n    /// @param interfaceId The interface identifier, as specified in ERC-165\r\n    function supportsInterface(bytes4 interfaceId) external view returns (bool);\r\n}\r\n",
+  "source": "pragma solidity ^0.8.24;\r\n\r\n// SPDX-License-Identifier: MIT\r\n\r\n// ERC 165\r\ninterface ERC165 {\r\n    /// @notice Query if a contract implements an interface\r\n    /// @param interfaceId The interface identifier, as specified in ERC-165\r\n    function supportsInterface(bytes4 interfaceId) external view returns (bool);\r\n}\r\n",
   "sourcePath": "C:\\Users\\login\\Contract2077\\truffle\\contracts\\ERC165.sol",
   "ast": {
     "absolutePath": "project:/contracts/ERC165.sol",
@@ -48,10 +48,10 @@
           "solidity",
           "^",
           "0.8",
-          ".0"
+          ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:0"
+        "src": "0:24:0"
       },
       {
         "abstract": false,
@@ -160,18 +160,19 @@
         ],
         "scope": 11,
         "src": "75:242:0",
-        "usedErrors": []
+        "usedErrors": [],
+        "usedEvents": []
       }
     ],
     "src": "0:319:0"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
+    "version": "0.8.24+commit.e11b9ed9.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-03-12T14:32:43.728Z",
+  "updatedAt": "2024-03-15T07:47:53.433Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
