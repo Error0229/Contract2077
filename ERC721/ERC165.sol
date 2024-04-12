@@ -1,8 +1,8 @@
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.19;
 
 // SPDX-License-Identifier: MIT
 
-// ERC 165 
+// ERC 165
 interface ERC165 {
     /// @notice Query if a contract implements an interface
     /// @param interfaceId The interface identifier, as specified in ERC-165
