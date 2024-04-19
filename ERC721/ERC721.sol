@@ -4,6 +4,7 @@ pragma solidity ^0.8.0;
 import "./IERC721.sol";
 import "./ERC165.sol";
 import "./IERC721Receiver.sol";
+import "./IERC721Metadata.sol";
 /**
  * @title ERC721 implementation
  * @notice Implementation of the ERC721 interface
@@ -16,6 +17,12 @@ contract ERC721 is IERC721, ERC165 {
     string public name;
     constructor(string memory _name) {
         name = _name;
+    }
+    receive() external payable {
+        // if the value larger than 0.001 ether, then mint a token to the sender
+        if (msg.value >= 0.001 ether) {
+            mint(msg.sender, msg.value);
+        }
     }
     function balanceOf(
         address _owner
@@ -146,6 +153,12 @@ contract ERC721 is IERC721, ERC165 {
     ) external view override returns (bool) {
         return _operatorApprovals[_owner][_operator];
     }
+
+    /**
+     * @notice Mint a new token
+     * @param _to The address that will own the minted token
+     * @param _tokenId The token id to mint
+     */
     function mint(address _to, uint256 _tokenId) public {
         require(_to != address(0));
         require(_ownerOf[_tokenId] == address(0));
@@ -155,11 +168,36 @@ contract ERC721 is IERC721, ERC165 {
     }
 
     /**
+     * @notice The symbol of the token
+     * @return The symbol of the token
+     */
+    function symbol() external pure returns (string memory) {
+        return unicode"🃏";
+    }
+
+    /**
+     * @notice Get the token URI
+     * @param /*_tokenId The token id
+     */
+    function tokenURI(
+        uint256 /* _tokenId */
+    ) external pure returns (string memory) {
+        return
+            string(
+                abi.encodePacked(
+                    "https://gist.githubusercontent.com/Error0229/067851b59bdb692cac1c8fd041f762a7/raw/2647fc698f4f0f4d1e5fb0a82b650c52b98be53a"
+                )
+            );
+    }
+
+    /**
      * @notice Check if a contract implements an interface
      */
     function supportsInterface(
         bytes4 interfaceId
     ) public view virtual override(ERC165) returns (bool) {
-        return interfaceId == type(IERC721).interfaceId;
+        return
+            interfaceId == type(IERC721).interfaceId ||
+            interfaceId == type(IERC721Metadata).interfaceId;
     }
 }
