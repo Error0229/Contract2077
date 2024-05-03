@@ -32,6 +32,7 @@
 	"type": "module",
 	"dependencies": {
 		"@helia/unixfs": "^3.0.2",
-		"helia": "^4.1.0"
+		"helia": "^4.1.0",
+		"svelte-web3": "^4.3.1"
 	}
 }

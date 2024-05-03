@@ -1,4 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<script lang="ts">
+<script>
+	import { onMount } from 'svelte';
+	import { defaultEvmStores } from 'svelte-web3';
+	defaultEvmStores.setProvider();
+	onMount(() => {
+		// add a test to return in SSR context
+		defaultEvmStores.setProvider();
+	});
 </script>
